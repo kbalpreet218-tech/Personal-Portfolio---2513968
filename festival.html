@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Summer Beats Music Festival</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    color:#333;
+}
+
+header{
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+    url("https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=1400&q=80");
+    background-size:cover;
+    background-position:center;
+    height:90vh;
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+header h1{
+    font-size:60px;
+    margin-bottom:15px;
+}
+
+header p{
+    font-size:22px;
+    margin-bottom:30px;
+}
+
+.btn{
+    text-decoration:none;
+    background:#ff5722;
+    color:white;
+    padding:15px 35px;
+    border-radius:30px;
+    font-size:18px;
+    transition:.4s;
+}
+
+.btn:hover{
+    background:#e64a19;
+}
+
+nav{
+    background:#111;
+    display:flex;
+    justify-content:center;
+    padding:15px;
+    position:sticky;
+    top:0;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 20px;
+    font-size:18px;
+}
+
+nav a:hover{
+    color:#ff9800;
+}
+
+section{
+    padding:60px 10%;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#ff5722;
+}
+
+.about p{
+    text-align:center;
+    font-size:18px;
+    line-height:1.8;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card h3{
+    text-align:center;
+    margin:15px;
+}
+
+.card p{
+    padding:0 20px 20px;
+    text-align:center;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+table th{
+    background:#ff5722;
+    color:white;
+    padding:15px;
+}
+
+table td{
+    padding:15px;
+    border:1px solid #ddd;
+    text-align:center;
+}
+
+form{
+    max-width:600px;
+    margin:auto;
+}
+
+input,textarea{
+    width:100%;
+    padding:15px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+button{
+    width:100%;
+    padding:15px;
+    background:#ff5722;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:18px;
+}
+
+button:hover{
+    background:#e64a19;
+}
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>🎵 Summer Beats Music Festival</h1>
+<p>Feel the Music • Enjoy the Summer • Make Memories</p>
+<a href="#tickets" class="btn">Book Tickets</a>
+</header>
+
+<nav>
+<a href="#about">About</a>
+<a href="#artists">Artists</a>
+<a href="#schedule">Schedule</a>
+<a href="#tickets">Tickets</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section id="about" class="about">
+<h2>About Festival</h2>
+<p>
+Summer Beats Music Festival is the biggest music celebration of the year,
+bringing together top artists, DJs, live bands, delicious food, exciting
+activities, and unforgettable entertainment in one amazing event.
+</p>
+</section>
+
+<section id="artists">
+<h2>Featured Artists</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=800&q=80">
+<h3>DJ Nova</h3>
+<p>Electronic Dance Music</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=800&q=80">
+<h3>The Rockers</h3>
+<p>Live Rock Performance</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=800&q=80">
+<h3>Melody Band</h3>
+<p>Pop & Acoustic Music</p>
+</div>
+
+</div>
+</section>
+
+<section id="schedule">
+<h2>Festival Schedule</h2>
+
+<table>
+
+<tr>
+<th>Time</th>
+<th>Performance</th>
+</tr>
+
+<tr>
+<td>4:00 PM</td>
+<td>Opening Ceremony</td>
+</tr>
+
+<tr>
+<td>5:30 PM</td>
+<td>DJ Nova Live</td>
+</tr>
+
+<tr>
+<td>7:00 PM</td>
+<td>The Rockers</td>
+</tr>
+
+<tr>
+<td>8:30 PM</td>
+<td>Melody Band</td>
+</tr>
+
+<tr>
+<td>10:00 PM</td>
+<td>Fireworks & Closing Show</td>
+</tr>
+
+</table>
+
+</section>
+
+<section id="tickets">
+<h2>Book Tickets</h2>
+
+<form>
+
+<input type="text" placeholder="Full Name" required>
+
+<input type="email" placeholder="Email Address" required>
+
+<input type="number" placeholder="Number of Tickets" required>
+
+<textarea rows="5" placeholder="Special Request"></textarea>
+
+<button>Book Now</button>
+
+</form>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact Us</h2>
+
+<p style="text-align:center;font-size:18px;">
+📍 City Stadium, Ludhiana<br><br>
+📞 +91 98765 43210<br><br>
+📧 summerbeats@gmail.com
+</p>
+
+</section>
+
+<footer>
+© 2026 Summer Beats Music Festival | Designed by Balpreet Kaur
+</footer>
+
+</body>
+</html>

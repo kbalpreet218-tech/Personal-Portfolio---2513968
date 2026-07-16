@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Personal Portfolio</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Background */
+body{
+background:linear-gradient(135deg,#6dd5fa,#2980b9);
+}
+
+/* Header */
+header{
+background:linear-gradient(to right,#141e30,#243b55);
+color:white;
+padding:25px;
+text-align:center;
+box-shadow:0 4px 10px rgba(0,0,0,0.3);
+}
+
+header h1{
+font-size:40px;
+letter-spacing:2px;
+}
+
+/* Navigation */
+
+nav{
+display:flex;
+justify-content:center;
+background:linear-gradient(to right,#ff512f,#dd2476);
+padding:15px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:0 20px;
+font-size:18px;
+font-weight:bold;
+padding:10px 18px;
+border-radius:25px;
+transition:0.4s;
+}
+
+nav a:hover{
+background:white;
+color:#dd2476;
+}
+
+/* Main Container */
+
+.container{
+width:80%;
+margin:50px auto;
+background:white;
+border-radius:20px;
+padding:40px;
+text-align:center;
+box-shadow:0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Image */
+
+img{
+width:220px;
+height:220px;
+border-radius:50%;
+border:6px solid #ff512f;
+box-shadow:0 0 25px rgba(255,81,47,0.6);
+transition:0.5s;
+}
+
+img:hover{
+transform:scale(1.08);
+}
+
+/* Text */
+
+h2{
+margin-top:20px;
+font-size:38px;
+color:#243b55;
+}
+
+h3{
+margin-top:10px;
+color:#ff512f;
+font-size:25px;
+}
+
+p{
+margin-top:20px;
+font-size:18px;
+line-height:1.8;
+color:#444;
+}
+
+/* Button */
+
+.btn{
+display:inline-block;
+margin-top:30px;
+padding:14px 30px;
+background:linear-gradient(to right,#36d1dc,#5b86e5);
+color:white;
+text-decoration:none;
+font-size:18px;
+font-weight:bold;
+border-radius:30px;
+transition:0.4s;
+}
+
+.btn:hover{
+transform:translateY(-5px);
+box-shadow:0 8px 18px rgba(0,0,0,0.3);
+}
+
+.intro-video{
+    width: 500px;
+    height: 280px;
+    object-fit: cover;
+}
+
+/* Footer */
+
+footer{
+margin-top:40px;
+background:white;
+color:#243b55;
+padding:18px;
+text-align:center;
+font-weight:bold;
+border-top:4px solid #ff512f;
+box-shadow:0 -4px 10px rgba(0,0,0,0.15);
+width:100%;
+}
+
+
+
+header h1{
+font-size:40px;
+letter-spacing:2px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>📞 Contact Me</h1>
+</header>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About Me</a>
+<a href="education.html">Education</a>
+<a href="projects.html">Projects</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+
+<h2>Get In Touch</h2>
+
+<form>
+
+<label><b>Full Name</b></label><br><br>
+<input type="text" placeholder="Enter your full name" required><br><br>
+
+<label><b>Phone Number</b></label><br><br>
+<input type="tel" placeholder="Enter your phone number" required><br><br>
+
+<label><b>Email Address</b></label><br><br>
+<input type="email" placeholder="Enter your email" required><br><br>
+
+<label><b>Gender</b></label><br><br>
+
+<input type="radio" name="gender"> Male
+
+<input type="radio" name="gender"> Female
+
+<input type="radio" name="gender"> Other
+
+<br><br>
+
+<label><b>Interests</b></label><br><br>
+
+<input type="checkbox"> Web Development
+
+<input type="checkbox"> Programming
+
+<input type="checkbox"> Graphic Design
+
+<input type="checkbox"> UI/UX Design
+
+<br><br>
+
+<label><b>Message</b></label><br><br>
+
+<textarea rows="6" cols="60"
+placeholder="Write your message here..."></textarea>
+
+<br><br>
+
+<input type="submit" value="Submit">
+
+</form>
+
+<br><br>
+
+<h2>🎥 Introduction Video</h2>
+
+<video class="intro-video" controls>
+    <source src="intro.mp4" type="video/mp4">
+</video>
+
+<br><br>
+
+<h2>🌐 Connect With Me</h2>
+
+<p>
+<a href="https://facebook.com" target="_blank">Facebook</a> |
+<a href="https://instagram.com" target="_blank">Instagram</a> |
+<a href="https://linkedin.com" target="_blank">LinkedIn</a> |
+<a href="https://github.com" target="_blank">GitHub</a>
+</p>
+
+</div>
+<h2 align="center">✨ Thank You!</h2>
+
+<p align="center" style="font-size:18px; line-height:1.8;">
+Thank you for visiting my portfolio website. I truly appreciate your
+time and interest in my work. If you have any questions, suggestions,
+or collaboration opportunities, please feel free to contact me using
+the form above. I look forward to connecting with you soon!
+</p>
+
+
+<footer>
+
+<p>© 2026 Balpreet Kaur | Personal Portfolio</p>
+
+</footer>
+</body>
+</html>
